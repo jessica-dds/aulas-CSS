@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificidade</title>
+    <style>
+        body {
+            color: #fff;
+            background-color: #000;
+        }
+
+        p.cor-vermelha {
+            color: red;
+        }
+
+        h2#fundo-amarelo {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <article>
+                <h1>HTML é uma linguagem de marcação</h1>
+                <p class="cor-vermelha">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis quae ullam iusto quis perferendis,
+                    enim perspiciatis! Autem aspernatur distinctio possimus hic perferendis, recusandae sapiente, et
+                    incidunt culpa quidem quae dignissimos?
+                </p>
+                <h2 class="cor-vermelha" id="fundo-amarelo">CSS é uma linguagem de estilo</h2>
+                <h2 class="cor-vermelha">CSS é uma linguagem de estilo</h2>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
