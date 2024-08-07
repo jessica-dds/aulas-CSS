@@ -1,0 +1,17 @@
+input::placeholder {
+    color: red;
+}
+
+input {
+    color: blue;
+}
+
+h1::before {
+    content: 'Preencher ';
+    color: black;
+}
+
+h1::after {
+    content: " de cadastro.";
+    color: black;
+}
