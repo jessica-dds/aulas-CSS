@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <!-- Formulário -->
+    <form>
+        <!-- Agrupamento -->
+        <fieldset>
+            <!-- Legenda para o agrupamento -->
+            <legend>Cadastro de Usuário</legend>
+            <!-- Campo de texto -->
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" />
+            </div>
+            <!-- Campo email -->
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" />
+            </div>
+            <!-- Campo de senha -->
+            <div>
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" />
+            </div>
+            <!-- Campo file -->
+            <div>
+                <label for="Arquivo">Arquivo</label>
+                <input type="file" id="Arquivo" />
+            </div>
+            <!-- Campo invisível -->
+            <div>
+                <input type="hidden" id="idUsuario" value="12" />
+            </div>
+            <!-- agrupamento Campo de checkbox -->
+            <div>
+                <label for="termo">CLT</label>
+                <input type="checkbox" id="clt" name="tipoTrabalho" />
+                <label for="termo">PJ</label>
+                <input type="checkbox" id="PJ" name="tipoTrabalho" />
+            </div>
+            <!-- agrupamento Campo de radio -->
+            <div>
+                <label for="termo">CLT</label>
+                <input type="radio" id="clt" name="tipoTrabalhoRadio" />
+                <label for="termo">PJ</label>
+                <input type="radio" id="PJ" name="tipoTrabalhoRadio" />
+            </div>
+            <input type="button" value="Enviar formulário" />
+            <button>Salvar</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
