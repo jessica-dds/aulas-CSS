@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        #texto1:valid {
+            background-color: rgb(79, 248, 79);
+            border: 5px solid green;
+        }
+
+        #texto1:invalid {
+            background-color: #fc5e5e;
+            border: 5px solid red;
+        }
+
+        form:valid {
+            background-color: #cacaca;
+        }
+
+        form:invalid {
+            background-color: #fc5e5e;
+        }
+
+        form:invalid button {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- required: deixa o campo obrigatório
+        pattern: permite validar via regex
+        minlength: define mínimo de caracteres
+        maxlength: define máximo de caracteres
+        min: mínimo número
+        max: máximo número -->
+    <form action="">
+        <label for="">Texto 1</label>
+        <input type="text" required minlength="1" maxlength="6" id="texto1" />
+        <br>
+        <label for="">Número</label>
+        <input type="number" min="0" max="100" />
+        <br>
+        <label for="">Texto 2</label>
+        <input type="text" pattern="azul|amarelo" />
+        <button type="submit">Salvar</button>
+    </form>
+</body>
+
+</html>
